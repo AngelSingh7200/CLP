@@ -18,6 +18,8 @@ import { BillingComponent } from './billing/billing.component';
 import {BillingsService} from './billings.service';
 import {ReportsService} from './report.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AddtestComponent } from './addtest/addtest.component';
+import { ReportComponent } from './report/report.component';
 
 const routes: Routes = [
   {
@@ -28,6 +30,12 @@ const routes: Routes = [
   },
   {
     path:"loyalty",component:LoyaltyComponent
+  },
+  {
+    path:"addtest",component:AddtestComponent
+  },
+  {
+    path:"report",component:ReportComponent
   },
   {  
     path: 'edit/:id',  
@@ -52,7 +60,11 @@ const routes: Routes = [
 
     FileuploadComponent,
 
-    BillingComponent
+    BillingComponent,
+
+    AddtestComponent,
+
+    ReportComponent
   ],
   imports: [
     BrowserModule,HttpClientModule, 
